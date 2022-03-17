@@ -1,15 +1,16 @@
 //
-//  ContentView.swift
+//  StackedPickerView.swift
 //  FitFinder
 //
-//  Created by Ellen Doll on 3/14/22.
+//  Created by Ellen Doll on 3/17/22.
 //
 
+import Foundation
 import SwiftUI
 
 /* Shows the actual invidiual swipe box. Will change DRASTICALLY after implementing
    camera functionality, this is currently just a placeholder. */
-struct SwipeBoxView: View {
+struct SwipeBoxView: View { 
     var swipeBox: SwipeBox?
     @EnvironmentObject private var wardrobe: Wardrobe
     @EnvironmentObject private var pickerList: PickerList
@@ -66,6 +67,7 @@ struct AddPickerView: View {
                     pickerCategory = nil
                 }
             }
+            Divider()
             
         }
     }
@@ -98,33 +100,4 @@ struct StackedPickerView: View {
         }
     }
     
-}
-
-struct ContentView: View {
-    //@EnvironmentObject private var wardrobe: Wardrobe
-    @EnvironmentObject private var pickerList: PickerList
-    
-    var body: some View {
-        TabView {
-            WardrobeView().tabItem {
-                Text("See Wardrobe")
-            }
-            // TODO: Make this the default tab somehow
-            StackedPickerView().environmentObject(PickerList()).tabItem {
-                Text("Create a Fit")
-            }
-            AddArticleView().tabItem {
-                Text("Add an Article")
-            }
-        }
-        
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            ContentView().environmentObject(PickerList())
-        }
-    }
 }

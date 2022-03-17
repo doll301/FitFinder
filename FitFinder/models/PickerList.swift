@@ -54,7 +54,7 @@ struct SwipeBox: Hashable {
             return 125
         }
     }
-}
+} 
 
 class PickerList: ObservableObject {
     @Published private var _swipeBoxes: [SwipeBox]

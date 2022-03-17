@@ -9,7 +9,7 @@ import Foundation
 
 /* Wardrobe object will store all the articles of clothing that have been added
    by the user. Article struct represents a single article of clothing. Image property
-   will be added later.*/
+   will be added later.*/ 
 // TODO: Add image property
 
 enum Category: String, CaseIterable {

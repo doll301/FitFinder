@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D5E739827E28E2000D4460D /* WardrobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E739727E28E2000D4460D /* WardrobeView.swift */; };
 		4D5E739A27E295BA00D4460D /* AddArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E739927E295BA00D4460D /* AddArticleView.swift */; };
+		4DC1182C27E3B63A009E63E8 /* StackedPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1182B27E3B63A009E63E8 /* StackedPickerView.swift */; };
 		4DDAC7CD27DFC3D900202FDD /* FitFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAC7CC27DFC3D900202FDD /* FitFinderApp.swift */; };
 		4DDAC7CF27DFC3D900202FDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAC7CE27DFC3D900202FDD /* ContentView.swift */; };
 		4DDAC7D127DFC3DB00202FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAC7D027DFC3DB00202FDD /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		4D5E739727E28E2000D4460D /* WardrobeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeView.swift; sourceTree = "<group>"; };
 		4D5E739927E295BA00D4460D /* AddArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArticleView.swift; sourceTree = "<group>"; };
+		4DC1182B27E3B63A009E63E8 /* StackedPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedPickerView.swift; sourceTree = "<group>"; };
 		4DDAC7C927DFC3D900202FDD /* FitFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDAC7CC27DFC3D900202FDD /* FitFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitFinderApp.swift; sourceTree = "<group>"; };
 		4DDAC7CE27DFC3D900202FDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DC1182D27E3B66A009E63E8 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAC7CE27DFC3D900202FDD /* ContentView.swift */,
+				4D5E739727E28E2000D4460D /* WardrobeView.swift */,
+				4DC1182B27E3B63A009E63E8 /* StackedPickerView.swift */,
+				4D5E739927E295BA00D4460D /* AddArticleView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		4DC1182E27E3B685009E63E8 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAC7F627DFCBBA00202FDD /* Wardrobe.swift */,
+				4DDAC7FA27DFD5F900202FDD /* PickerList.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		4DDAC7C027DFC3D900202FDD = {
 			isa = PBXGroup;
 			children = (
@@ -97,14 +119,11 @@
 		4DDAC7CB27DFC3D900202FDD /* FitFinder */ = {
 			isa = PBXGroup;
 			children = (
+				4DC1182E27E3B685009E63E8 /* models */,
+				4DC1182D27E3B66A009E63E8 /* views */,
 				4DDAC7CC27DFC3D900202FDD /* FitFinderApp.swift */,
-				4DDAC7CE27DFC3D900202FDD /* ContentView.swift */,
 				4DDAC7D027DFC3DB00202FDD /* Assets.xcassets */,
 				4DDAC7D227DFC3DB00202FDD /* Preview Content */,
-				4DDAC7F627DFCBBA00202FDD /* Wardrobe.swift */,
-				4DDAC7FA27DFD5F900202FDD /* PickerList.swift */,
-				4D5E739727E28E2000D4460D /* WardrobeView.swift */,
-				4D5E739927E295BA00D4460D /* AddArticleView.swift */,
 			);
 			path = FitFinder;
 			sourceTree = "<group>";
@@ -257,6 +276,7 @@
 			files = (
 				4DDAC7F727DFCBBA00202FDD /* Wardrobe.swift in Sources */,
 				4DDAC7FB27DFD5F900202FDD /* PickerList.swift in Sources */,
+				4DC1182C27E3B63A009E63E8 /* StackedPickerView.swift in Sources */,
 				4DDAC7CF27DFC3D900202FDD /* ContentView.swift in Sources */,
 				4D5E739A27E295BA00D4460D /* AddArticleView.swift in Sources */,
 				4D5E739827E28E2000D4460D /* WardrobeView.swift in Sources */,
